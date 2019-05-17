@@ -269,8 +269,179 @@ public class OfflineExercises {
 	//largest("555 72 86 45 10") → 15
 	
 	public int largest(String arg1) {
+		String x = arg1;
+		String y = "";
+		int j = 0;
+		String z = "";
+		String a = "";
+		String b = "";
+		String c = "";
+		int k = 0;
+		int l = 0;
+		int m = 0;
+		int n = 0;
+		int o = 0;
+		for (int i = 0; i < x.length(); i++) {
+			y = x.substring(i);
+			if(y.equals(" ")) {
+				z = x.substring(j, i);
+				if(z.length() == 2) {
+					a = z.substring(0, 1);
+					b = z.substring(1, 2);
+					if (a == "1") {
+						k = 1;
+					}
+					else if (a == "2") {
+						k = 2;
+					}
+					else if (a == "3") {
+						k = 3;
+					}
+					else if (a == "4") {
+						k = 4;
+					}
+					else if (a == "5") {
+						k = 5;
+					}
+					else if (a == "6") {
+						k = 6;
+					}
+					else if (a == "7") {
+						k = 7;
+					}
+					else if (a == "8") {
+						k = 8;
+					}
+					else if (a == "9") {
+						k = 9;
+					}
+					if (b == "1") {
+						l = 1;
+					}
+					else if (b == "2") {
+						l = 2;
+					}
+					else if (b == "3") {
+						l = 3;
+					}
+					else if (b == "4") {
+						l = 4;
+					}
+					else if (b == "5") {
+						l = 5;
+					}
+					else if (b == "6") {
+						l = 6;
+					}
+					else if (b == "7") {
+						l = 7;
+					}
+					else if (b == "8") {
+						l = 8;
+					}
+					else if (b == "9") {
+						l = 9; 
+					}
+					m = k + l;
+					if (m > o) {
+						o = m;
+					}
+				}
+				else if (z.length() == 3) {
+					a = z.substring(0, 1);
+					b = z.substring(1, 2);
+					c = z.substring(2, 3);
+					if (a == "1") {
+						k = 1;
+					}
+					else if (a == "2") {
+						k = 2;
+					}
+					else if (a == "3") {
+						k = 3;
+					}
+					else if (a == "4") {
+						k = 4;
+					}
+					else if (a == "5") {
+						k = 5;
+					}
+					else if (a == "6") {
+						k = 6;
+					}
+					else if (a == "7") {
+						k = 7;
+					}
+					else if (a == "8") {
+						k = 8;
+					}
+					else if (a == "9") {
+						k = 9;
+					}
+					if (b == "1") {
+						l = 1;
+					}
+					else if (b == "2") {
+						l = 2;
+					}
+					else if (b == "3") {
+						l = 3;
+					}
+					else if (b == "4") {
+						l = 4;
+					}
+					else if (b == "5") {
+						l = 5;
+					}
+					else if (b == "6") {
+						l = 6;
+					}
+					else if (b == "7") {
+						l = 7;
+					}
+					else if (b == "8") {
+						l = 8;
+					}
+					else if (b == "9") {
+						l = 9; 
+					}
+					if (c == "1") {
+						n = 1;
+					}
+					else if (c == "2") {
+						n = 2;
+					}
+					else if (c == "3") {
+						n = 3;
+					}
+					else if (c == "4") {
+						n = 4;
+					}
+					else if (c == "5") {
+						n = 5;
+					}
+					else if (c == "6") {
+						n = 6;
+					}
+					else if (c == "7") {
+						n = 7;
+					}
+					else if (c == "8") {
+						n = 8;
+					}
+					else if (c == "9") {
+						n = 9; 
+					}
+					m = k + l + n;
+					if (m > o) {
+						o = m;
+					}
+				}
+				j = i;
+			}
+		}
 
-		return 0;
+		return o;
 		
 	}
 	
